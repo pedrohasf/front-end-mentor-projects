@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,600&display=swap");
+      body {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      .background-gradient {
+        background-image: linear-gradient(
+          135deg,
+          hsl(0, 0%, 100%),
+          hsl(0, 100%, 98%)
+        );
+      }
+      .left {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-position: center center;
+      }
+      .background-gradient-button {
+        background-image: linear-gradient(
+          135deg,
+          hsl(0, 80%, 86%),
+          hsl(0, 74%, 74%)
+        );
+      }
+      .h-11 {
+        height: 2.7rem;
+      }
+      .error-icon {
+        top: 10px;
+        right: 160px;
+      }
+      .hero-mobile {
+        width: calc(100% + 5rem);
+      }
+    </style>
+  </head>
+  <body
+    class="background-gradient flex text-red-300 pb-6 md:pb-0 max-w-full overflow-x-hidden"
+  >
+    <div class="left w-full lg:w-3/5 pr-10 pl-10 min-h-screen">
+      <div class="lg:max-w-md m-auto">
+        <img src="images/logo.svg" alt="logo" class="lg:my-16 my-8 md:w-48" />
+        <img
+          src="images/hero-mobile.jpg"
+          alt="Hero"
+          class="lg:hidden block hero-mobile -ml-10 -mr-10 max-w-none"
+        />
+        <h1
+          class="md:text-6xl text-5xl font-thin leading-none tracking-widest mt-8 lg:mt-32"
+        >
+          WE'RE<br />
+          <span class="text-gray-800 font-semibold"
+            >COMING <br />
+            SOON</span
+          >
+        </h1>
+        <p class="my-8">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form id="form" class="relative">
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            class="rounded-full py-2 px-8 w-full md:w-10/12 bg-transparent outline-none border-solid border-2 border-red-300"
+          />
+          <img
+            class="absolute block error-icon transform translate-x-20 md:translate-x-0 hidden"
+            src="./images/icon-error.svg"
+            alt="error"
+            id="errorIcon"
+          />
+          <button
+            type="submit"
+            class="outline-none background-gradient-button rounded-full py-2 px-8 pointer absolute top-0 right-0 transform  md:-translate-x-full h-11 transition duration-300 hover:opacity-75"
+          >
+            <img src="./images/icon-arrow.svg" alt="submit button" />
+          </button>
+          <small id="errorMessage" class="block mx-6 mt-4 hidden"
+            >Please provide a valid email</small
+          >
+        </form>
+      </div>
+    </div>
+    <div class="hidden lg:block md:w-2/5">
+      <img
+        src="images/hero-desktop.jpg"
+        alt="Hero"
+        class="hidden lg:block h-screen w-full"
+      />
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
