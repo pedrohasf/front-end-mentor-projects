@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .box {
+        box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body
+    class="text-white bg-red-400 py-10 lg:py-0 container mx-auto lg:flex"
+    style="background-image: url(./images/bg-intro-desktop.png);"
+  >
+    <div
+      class="lg:w-1/2 lg:mt-20 lg:py-32 max-w-md md:mx-auto lg:ml-auto text-center lg:text-left"
+    >
+      <h1 class="text-4xl lg:text-5xl font-bold">
+        Learn to code by watching others
+      </h1>
+      <p class="text-md mt-4">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </div>
+    <div
+      class="lg:w-1/2 lg:mt-12 lg:pb-8 px-8 flex flex-col justify-end ml-auto lg:mt-0 mt-10"
+    >
+      <button
+        class="bg-purple-700 p-4 w-full my-4 box rounded-md hover:opacity-75 transition duration-1000"
+      >
+        <span class="font-bold">
+          Try it free 7 days
+        </span>
+        then $20/mo. thereafter
+      </button>
+      <form
+        id="form"
+        class="bg-white text-black flex flex-col px-6 h-6/12 rounded-md py-8 box"
+      >
+        <input
+          type="text"
+          name="FirstName"
+          id="FirstName"
+          placeholder="First Name"
+          class="border mb-6 border-gray-500 p-4 px-8 rounded-md placeholder-gray-700 text-sm"
+        />
+        <img
+          class="w-6 relative transform -translate-y-10 ml-auto mr-4 hidden error-icon"
+          src="./images/icon-error.svg"
+        />
+        <small
+          class="ml-auto relative transform -translate-x-2 -translate-y-4 text-red-600 error-message hidden"
+          >First Name cannot be empty</small
+        >
+        <input
+          type="text"
+          name="LastName"
+          id="LastName"
+          placeholder="Last Name"
+          class="border mb-6 border-gray-500 p-4 px-8 rounded-md placeholder-gray-700 text-sm"
+        />
+        <img
+          class="w-6 relative transform -translate-y-10 ml-auto mr-4 hidden error-icon"
+          src="./images/icon-error.svg"
+        />
+        <small
+          class="ml-auto relative transform -translate-x-2 -translate-y-4 text-red-600 error-message hidden"
+          >Last Name cannot be empty</small
+        >
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Email Address"
+          class="border mb-6 border-gray-500 p-4 px-8 rounded-md placeholder-gray-700 text-sm"
+        />
+        <img
+          class="w-6 relative transform -translate-y-10 ml-auto mr-4 hidden error-icon"
+          src="./images/icon-error.svg"
+        />
+        <small
+          class="ml-auto relative transform -translate-x-2 -translate-y-4 text-red-600 error-message hidden"
+          >Looks like this is not an email</small
+        >
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="border mb-6 border-gray-500 p-4 px-8 rounded-md placeholder-gray-700 text-sm"
+        />
+        <img
+          class="w-6 relative transform -translate-y-10 ml-auto mr-4 hidden error-icon"
+          src="./images/icon-error.svg"
+        />
+        <small
+          class="ml-auto relative transform -translate-x-2 -translate-y-4 text-red-600 error-message hidden"
+          >Password cannot be empty</small
+        >
+        <button
+          type="submit"
+          class="mt-2 bg-green-500 rounded-md w-full p-4 text-white border border-b-4 border-green-600 mb-4 hover:opacity-75 transition duration-500"
+        >
+          CLAIM YOUR FREE TRIAL
+        </button>
+        <small class="text-red-500 font-semibold text-center">
+          <span class="text-gray-500 font-normal"
+            >By clicking the button, you are agreeing to our</span
+          >
+          <span class="cursor-pointer">Terms and Services</span>
+        </small>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
