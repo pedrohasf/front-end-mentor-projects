@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Karla", sans-serif;
+      }
+      .bg-teal-400 {
+        background-color: hsl(179, 62%, 43%);
+      }
+      .bg-teal-300 {
+        background-color: hsl(179, 47%, 52%);
+      }
+      .text-teal-400 {
+        color: hsl(179, 62%, 43%);
+      }
+      .text-green-400 {
+        color: hsl(71, 73%, 54%);
+      }
+      .bg-green-400 {
+        background-color: hsl(71, 73%, 54%);
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center bg-gray-200  h-screen p-4">
+    <div class="shadow-2xl max-w-5xl m-auto mb-8 lg:mb-auto">
+      <div class="p-10 bg-white rounded-lg lg:pr-40">
+        <h1 class="text-2xl lg:text-4xl text-teal-400 font-bold mb-2 mt-4">
+          Join our community
+        </h1>
+        <h2 class="text-xl lg:text-2xl text-green-400 font-bold my-4">
+          30-day, hassle-free money back guarantee
+        </h2>
+        <p class="lg:text-lg text-gray-500 mt-2">
+          Gain access to our full library of tutorials along with expert code
+          reviews.
+        </p>
+        <p class="lg:text-lg text-gray-500">
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      <div class="flex flex-col lg:flex-row">
+        <div
+          class="bg-teal-400 w-full lg:w-1/2 p-8 text-white lg:rounded-bl-lg"
+        >
+          <h2 class="text-2xl font-bold mb-2 mt-4">
+            Monthly Subscription
+          </h2>
+          <p class="text-gray-400 flex items-center">
+            <span class="text-5xl text-white mr-3">
+              &dollar;29
+            </span>
+            per month
+          </p>
+          <p class="text-lg mb-6">
+            Full access for less than &dollar;1 a day
+          </p>
+          <button class="bg-green-400 w-full h-16 rounded-md font-bold mb-4">
+            Sign Up
+          </button>
+        </div>
+        <div
+          class="bg-teal-300 w-full lg:w-1/2 p-8 text-white rounded-b-lg lg:rounded-br-lg lg:rounded-bl-none "
+        >
+          <h2 class="text-2xl font-bold mt-4 mb-4">
+            Why Us
+          </h2>
+          <ul class="text-gray-200 leading-relaxed">
+            <li class="mb-px">
+              Tutorials by industry experts
+            </li>
+            <li class="mb-px">
+              Peer &amp; expert code review
+            </li>
+            <li class="mb-px">
+              Coding exercises
+            </li>
+            <li class="mb-px">
+              Access to our GitHub repos
+            </li>
+            <li class="mb-px">
+              Community forum
+            </li>
+            <li class="mb-px">
+              Flashcard decks
+            </li>
+            <li class="mb-px">
+              New videos every week
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

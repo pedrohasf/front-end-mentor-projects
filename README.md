@@ -11,3 +11,5 @@ Live Demos:
 [Ping single page component](https://hungry-aryabhata-bf5cbd.netlify.com/)
 
 [Intro component with signUp form](https://stoic-saha-22cecb.netlify.com/)
+
+[Single Price Grid Component](https://quizzical-bell-9388ab.netlify.com/)
