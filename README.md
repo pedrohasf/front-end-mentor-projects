@@ -13,3 +13,5 @@ Live Demos:
 [Intro component with signUp form](https://stoic-saha-22cecb.netlify.com/)
 
 [Single Price Grid Component](https://quizzical-bell-9388ab.netlify.com/)
+
+[Huddle landing page with alternating feature blocks](https://cranky-shockley-1df336.netlify.com/)

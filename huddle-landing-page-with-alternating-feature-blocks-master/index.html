@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      h2 {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .background-very-pale-cyan {
+        background-color: hsl(193, 100%, 96%);
+      }
+      .background-pink {
+        background-color: hsl(322, 100%, 66%);
+      }
+      .background-very-dark-cyan {
+        background-color: hsl(192, 100%, 9%);
+      }
+      .shadow-lg {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body class="text-center lg:text-left">
+    <header
+      class="background-very-pale-cyan"
+      style="background-image: url(./images/bg-hero-desktop.svg);"
+    >
+      <div class="container mx-auto">
+        <nav class="flex lg:flex-row flex-col py-12">
+          <img class="w-5/12 lg:w-4/12" src="./images/logo.svg" alt="Logo" />
+          <button
+            class="rounded-full py-3 px-4 bg-white ml-auto transform -translate-y-8 lg:translate-y-0 w-40 lg:w-48 shadow-lg font-semibold"
+          >
+            Try It Free
+          </button>
+        </nav>
+        <div class="flex lg:flex-row flex-col pb-8 lg:py-8">
+          <div class="flex flex-col lg:mr-12">
+            <h1 class="text-2xl lg:text-4xl max-w-md mx-auto lg:mx-0">
+              Build The Community Your Fans Will Love
+            </h1>
+            <p class="text-gray-600 lg:text-lg mt-8 mb-6 mx-auto lg:mx-0">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button
+              class="background-pink text-white rounded-full py-3 px-6 w-64 font-bold mb-6 lg:mb-0 mx-auto lg:mx-0"
+            >
+              Get Started For Free
+            </button>
+          </div>
+          <img
+            class="w-full lg:w-5/12"
+            src="./images/illustration-mockups.svg"
+            alt="Mockups"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container mx-auto">
+        <div
+          class="flex lg:flex-row flex-col-reverse rounded-lg shadow-lg my-8 py-12 px-6 lg:p-16"
+        >
+          <div class="flex flex-col max-w-lg lg:mr-12 mx-auto">
+            <h2 class="text-3xl my-8">
+              Grow Together
+            </h2>
+            <p class="lg:text-lg text-gray-500">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <img
+            class="w-full lg:w-5/12"
+            src="./images/illustration-grow-together.svg"
+            alt="Grow Together"
+          />
+        </div>
+        <div
+          class="flex lg:flex-row-reverse flex-col-reverse rounded-lg shadow-lg my-8 py-12 px-6 lg:p-16"
+        >
+          <div class="flex flex-col max-w-lg lg:ml-12 mx-auto">
+            <h2 class="text-3xl my-8">
+              Flowing Conversations
+            </h2>
+            <p class="lg:text-lg text-gray-500">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <img
+            class="w-full lg:w-5/12 flex"
+            src="./images/illustration-flowing-conversation.svg"
+            alt="Flowing Conversations"
+          />
+        </div>
+        <div
+          class="flex lg:flex-row flex-col-reverse rounded-lg shadow-lg my-8 py-12 px-6 lg:p-16"
+        >
+          <div class="flex flex-col max-w-lg lg:mr-12 mx-auto">
+            <h2 class="text-3xl my-8">
+              Your Users
+            </h2>
+            <p class="lg:text-lg text-gray-500">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <img
+            class="w-full lg:w-5/12"
+            src="./images/illustration-your-users.svg"
+            alt="Your Users"
+          />
+        </div>
+      </div>
+    </main>
+    <div
+      class="relative -mb-16 mx-auto shadow-lg rounded-lg max-w-xl h-48 lg:h-56 bg-white mt-24 mr-4 ml-4 md:mx-auto"
+    >
+      <div class="flex flex-col text-center">
+        <h2 class="text-xl lg:text-3xl mt-10 lg:mt-16 px-2">
+          Ready To Build Your Community?
+        </h2>
+        <button
+          class="background-pink text-white rounded-full py-2 px-4 w-56 m-auto mt-4 text-sm lg:text-base font-semibold"
+        >
+          Get Started For Free
+        </button>
+      </div>
+    </div>
+    <footer class="text-white background-very-dark-cyan pt-40">
+      <div class="container mx-auto">
+        <img
+          src="https://fervent-mayer-36e64f.netlify.com/huddle-landing-page/images/logo%20white.svg"
+          alt="Logo"
+        />
+        <div
+          class="flex lg:flex-row flex-col justify-between mt-6 pb-10 text-left"
+        >
+          <ul class="max-w-xs lg:mb-0 mb-12">
+            <li class="leading-relaxed pb-2 text-lg">
+              <div class="flex flex-row">
+                <i class="fas fa-map-marker-alt mt-2 mr-6"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </div>
+            </li>
+            <li class="py-4 text-lg">
+              <div class="flex flex-row">
+                <i class="fas fa-phone-volume mt-1 mr-6"></i>
+                +1-543-123-4567
+              </div>
+            </li>
+            <li class="pt-2 text-lg">
+              <div class="flex flex-row">
+                <i class="fas fa-envelope mt-1 mr-6"></i>
+                example@huddle.com
+              </div>
+            </li>
+          </ul>
+          <ul class="lg:mb-0 mb-4">
+            <li class="pb-1 lg:pb-2 text-lg">
+              About Us
+            </li>
+            <li class="py-2 lg:py-4 text-lg">
+              What We Do
+            </li>
+            <li class="pt-1 lg:pt-2 text-lg">
+              FAQ
+            </li>
+          </ul>
+          <ul class="mb-16 lg:mb-0">
+            <li class="pb-1 lg:pb-2 text-lg">
+              Career
+            </li>
+            <li class="py-2 lg:py-4 text-lg">
+              Blog
+            </li>
+            <li class="pt-1 lg:pt-2 text-lg">
+              Contact Us
+            </li>
+          </ul>
+          <ul class="flex lg:mx-0 mx-auto">
+            <li
+              class="rounded-full h-10 w-10 text-lg inline-flex items-center justify-center border mx-1"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li
+              class="rounded-full h-10 w-10 text-lg inline-flex items-center justify-center border mx-1"
+            >
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li
+              class="rounded-full h-10 w-10 text-lg inline-flex items-center justify-center border mx-1"
+            >
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+        </div>
+        <p
+          class="flex lg:justify-end text-gray-500 pb-20 justify-center lg:text-lg"
+        >
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
