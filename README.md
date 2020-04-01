@@ -15,3 +15,5 @@ Live Demos:
 [Single Price Grid Component](https://quizzical-bell-9388ab.netlify.com/)
 
 [Huddle landing page with alternating feature blocks](https://cranky-shockley-1df336.netlify.com/)
+
+[Huddle landing page with single introductory section](https://quizzical-curran-f76e37.netlify.com/)
